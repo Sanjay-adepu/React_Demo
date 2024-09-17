@@ -1,0 +1,290 @@
+/* Sidebar.css */
+
+.sidebar{
+  width: 100%;
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 20px;
+  background: black;
+  margin-top: 10px;
+  color: white;
+}
+
+.banner img {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  position: relative;
+  left: 300px;
+  list-style: none;
+}
+
+.home {
+  position: relative;
+  left: 20px;
+  top: 18px;
+}
+
+#v, #i {
+  display: none;
+}
+.computer{
+  display: flex;
+  flex-direction: row;
+}
+.computer div img{
+  width:270px;
+  height:270px;
+  margin-left:30px;
+  border:solid 2px black;
+  box-shadow: -4px 4px 4px #0f1212;
+  padding:6px;
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:50px;
+  padding:30px;
+  background:#52f4f7;
+  color:black;
+  border:solid 2px black;
+}
+
+.list1 {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  height: 600px;
+  width: 50%;
+  background: black;
+  list-style: none;
+  align-items: center;
+}
+
+.list1 li{
+  width: 200px;
+  padding-left: 50px;
+  margin-right: 70px;
+  margin-top: 30px;
+}
+
+.list1 li:hover {
+  background: black;
+  color: white;
+  border-radius: 0;
+  width: 50%;
+}
+
+.m {
+  display: none;
+}
+
+#img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+i {
+  display: flex;
+  color: white;
+  justify-content: flex-start;
+  position: relative;
+  right: 600px;
+  top: 30px;
+}
+
+.list2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  font-size: 25px;
+  background: silver;
+  color:black;
+  border: solid 3px black;
+  border-radius: 15px;
+  
+}
+
+.list2 li {
+  margin: 18px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#se {
+  margin-top: 20px;
+  padding: 10px 50px;
+  border: solid 3px black;
+  border-radius: 15px;
+}
+
+@media (max-width: 420px) {
+  .x img {
+    display: block;
+  }
+.computer{
+  display: flex;
+  flex-direction: row;
+}
+.computer div img{
+  width:100px;
+  height:100px;
+  margin-left:5px;
+  border:solid 1px black;
+  box-shadow: -2px 2px 2px #0f1212;
+}
+.head{
+  font-size:25px;
+  padding:15px;
+  background-color:#08e4f5;
+  color: black;
+  border:solid 1px black;
+}
+
+  .list {
+    display: none;
+  }
+#i{
+  position:relative;
+  left:200px;
+}
+  #d li {
+    display: none;
+    list-style: none;
+  }
+
+  #d:clicked ~ #d li {
+    display: block;
+  }
+  
+/* Style the container */
+.products {
+    margin: 20px;
+}
+
+/* Style the drop-down button */
+select[name="dropdown"] {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    cursor: pointer;
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+}
+
+/* Add a custom arrow */
+select[name="dropdown"]::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Style options */
+select[name="dropdown"] option {
+    background-color: #f57508;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Hover and focus states */
+select[name="dropdown"]:hover, select[name="dropdown"]:focus {
+    border-color: #888;
+    outline: none;
+}
+  .banner img {
+    height: 200px;
+  }
+
+  .list2 {
+    display: none;
+    font-size: 8px;
+    padding: 5px 0;
+  }
+
+  .list2 li {
+    margin: 5px;
+  }
+
+  i {
+    top: 25px;
+    right: 60px;
+  }
+
+  #img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .home {
+    padding-bottom: 30px;
+  }
+
+  #v:checked ~ .list1 {
+    display: flex;
+    flex-direction: column;
+    background: #f57508;
+    color: black;
+    position: fixed;
+    top: 73px;
+    left: 0;
+    padding-left: 50px;
+  }
+
+  .m {
+    display: flex;
+  }
+
+  #i {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    top: 7px;
+    left: 200px;
+  }
+.box{
+  position: fixed;
+  background: black;
+  width:100%;
+}
+  #select {
+    top: 10px;
+    left: 100px;
+  }
+}
